@@ -2,7 +2,7 @@
 """
 takes an argument 2 strings
 """
-import markdown
+
 import os
 import sys
 
@@ -22,6 +22,7 @@ with open(markdown_file, 'r') as mark_file:
 
 html = markdown.markdown(markdown_text)
 
-with open(output_file) as html_file:
+with open(output_file, 'w') as html_file:
     html_file.write(html)
+
 sys.exit(0)
