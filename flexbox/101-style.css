@@ -1,0 +1,38 @@
+.container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.box1 {
+	background-color: #4CAF50;
+	flex: 1;
+	text-align: center;
+}
+.box2 {
+	background-color: #2196F3;
+        flex: 1;
+        text-align: center;
+}
+.box3 {
+	background-color: #37474F;
+        flex: 2;
+        text-align: center;
+}
+.box4 {
+	background-color: #9C27B0;
+        flex: 1;
+        text-align: center;
+}
+.box5 {
+	background-color: #FF5722;
+        flex: 1;
+        text-align: center;
+}
+.box {
+	color: white;
+	font-size: 2rem;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 100px;
+}
