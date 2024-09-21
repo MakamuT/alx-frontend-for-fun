@@ -1,0 +1,53 @@
+.toggle{
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+}
+.toggle-cb{
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+.toggle-label {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: white;
+  transition: background-color 0.4s;
+  border-radius: 34px;
+}
+.toggle-inner {
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  bottom: 2px;
+  right: 50%;
+  background-color: white;
+  border-radius: 32px;
+  transition: right 0.2s, background 0.4s;
+}
+.toggle-switch {
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  bottom: 2px;
+  width: 30px;
+  background-color: white;
+  border-radius: 30px;
+  transition: left 0.2s;
+}
+.toggle-cb:checked + .toggle-label .toggle-inner {
+  right: 2px;
+  background-color: e1013c;
+}
+.toggle-cb:checked + .toggle-label .toggle-switch{
+    left: 26px;
+    background-color: #EBEBEB;
+}
+.toggle-switch {
+  box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+}
