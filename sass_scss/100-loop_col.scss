@@ -1,14 +1,10 @@
-/*loop col*/
-@for $i from 1 through 4{
-	.col-#{$i}{
-		@if $i == 1{
-			width: 100%;
-		} @else if $i == 2{
-			width: 50%;
-		} @else if $i == 3{
-			width: 33.3333333333%;
-		} @else if $i == 4{
-			width: 25%;
-		}
-	}
-}
+/* Loop to create column classes */
+@for $i from 1 through 4 {
+	  .col-#{$i} {
+		  @if $i == 1 {width: 100%;
+		  } @else if $i == 2 {width: 50%;
+		  } @else if $i == 3 {width: 33.3333333333%
+		  } @else if $i == 4 {width: 25;
+		  }
+	  }
+  }
